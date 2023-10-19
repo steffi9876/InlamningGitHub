@@ -4,12 +4,12 @@ import java.time.LocalDate;
 
 public class GymMember {
 
-        private String memberID;
+        private String socialSecurityNr;
         private LocalDate membershipDate;
         private String name;
 
-        public GymMember(String memberID, String name, LocalDate membershipDate){
-            this.memberID = memberID;
+        public GymMember(String socialSecurityNr, String name, LocalDate membershipDate){
+            this.socialSecurityNr = socialSecurityNr;
             this.membershipDate = membershipDate;
             this.name = name;
         }
@@ -26,8 +26,8 @@ public class GymMember {
             LocalDate lastyear = currentDate.minusYears(1);
             return membershipDate.isAfter(lastyear);
         }
-        public String getMemberID(){
-            return memberID;
+        public String getSocialSecurityNr(){
+            return socialSecurityNr;
         }
 
     }

@@ -49,7 +49,7 @@ import java.util.Scanner;
 
                     GymMember member = new GymMember(socialsecurityNr, name, paymentDate);
 
-                    if (member.getMemberID().equals(search) || member.getName().equals(search)) {
+                    if (member.getSocialSecurityNr().equals(search) || member.getName().equals(search)) {
                         if (member.isMembershipActive(currentDate)) {
                             approved = true;
                             System.out.println(active);
